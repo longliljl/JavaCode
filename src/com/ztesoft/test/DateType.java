@@ -93,4 +93,8 @@ public class DateType {
 	 * (~x+1)
 	 * 10  a % 2 等价于 a & 1
 	 */
+
+	public static int getModulo(int a,int n){
+	    return a % (2^n);//等价于 a & (2^n - 1)
+    }
 }
